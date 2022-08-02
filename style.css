@@ -1,6 +1,7 @@
 @media only screen and (max-width: 850px) {
     html {
         overflow-x: hidden;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
     html,
@@ -16,11 +17,14 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 20%;
+        width: 40%;
     }
 
     h2 {
+        color: rgba(0, 128, 0, 0.7);
         text-align: center;
+        background-color: white;
+        font-weight: 900;
     }
 
     .grid-container {
@@ -29,11 +33,8 @@
     }
 
     .grid-item {
-        /* border: 1px solid black; */
         padding: 20%;
         position: relative;
-        /* width: 10%; */
-        /* left: 20px; */
         height: 20%;
         text-align: center;
         background-repeat: no-repeat;
@@ -61,48 +62,71 @@
     .prices {
         font-size: 80%;
         text-align: center;
+        padding-top: 20%;
     }
 
     #zero {
-        background-image: url(/home/gefen/websites/PoolKiosk/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
     }
 
     #one {
-        background-image: url(/home/gefen/websites/PoolKiosk/images/fries.png) !important;
+        background-image: url(./images/fries.png) !important;
     }
 
     #two {
-        background-image: url(/home/gefen/websites/PoolKiosk/images/schnitzel.png) !important;
+        background-image: url(./images/schnitzel.png) !important;
 
     }
 
     #three {
-        background-image: url(/home/gefen/websites/PoolKiosk/images/coke.png) !important;
+        background-image: url(./images/coke.png) !important;
 
     }
 
     #four {
-        background-image: url(/home/gefen/websites/PoolKiosk/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
 
     }
 
     #five {
-        background-image: url(/home/gefen/websites/PoolKiosk/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
 
     }
 
     #six {
-        background-image: url(/home/gefen/websites/PoolKiosk/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
 
     }
 
     #seven {
-        background-image: url(/home/gefen/websites/PoolKiosk/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
 
     }
 
     #eight {
-        background-image: url(/home/gefen/websites/PoolKiosk/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
 
+    }
+
+    #nine {
+        background-image: url(./images/burger.png) !important;
+    }
+
+    #ten {
+        background-image: url(./images/fries.png) !important;
+    }
+
+    #eleven {
+        background-image: url(./images/schnitzel.png) !important;
+
+    }
+
+    #order_now {
+        color: white;
+        border-radius: 60px;
+        font-size: large;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(0, 128, 0, 0.7);
     }
 }
