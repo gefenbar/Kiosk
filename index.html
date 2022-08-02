@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <button type="button" id="exit" onclick="windowClose()">X</button>
+        <button type="button" id="exit" onclick="window.open('', '_self', ''); window.close();">X</button>
         <img id="logo" src="./images/logo.png" alt="logo">
         <hr>
     </header>
@@ -25,52 +25,52 @@
     </p>
     <div class="grid-container">
         <div class="grid-item" id="zero">
-            <button type="button" name="המבורגר" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="burger" name="המבורגר" price="19:90₪" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="one">
-            <button type="button" name="צ'יפס" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="fries" name="צ'יפס" price="19:90₪"  class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="two">
-            <button type="button" name="שניצל" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="schnitzel" name="שניצל" price="19:90₪" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="three">
-            <button type="button" name="קולה" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="coke" name="קולה" price="19:90₪" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="four">
-            <button type="button" name="4" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="xx" name="4" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="five">
-            <button type="button" name="5" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="yy" name="5" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="six">
-            <button type="button" name="6" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="zz" name="6" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="seven">
-            <button type="button" name="7" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="ww" name="7" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="eight">
-            <button type="button" name="8" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="aa" name="8" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="nine">
-            <button type="button" name="8" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="awq" name="8" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="ten">
-            <button type="button" name="8" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="abc" name="8" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
         <div class="grid-item" id="eleven">
-            <button type="button" name="8" class="tiles" onclick="mark(this)">-</button>
-            <p class="prices">19:90₪:מחיר</p>
+            <button type="button" id="rrr" name="8" class="tiles" onclick="mark(this)">-</button>
+            <p class="prices">19:90₪</p>
         </div>
     </div>
     <button type="button" id="order_now" onclick="order()">הזמינו עכשיו</button>
