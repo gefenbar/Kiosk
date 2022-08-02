@@ -1,7 +1,8 @@
 prices = { "שניצל": 25, "צ'יפס": 15, "המבורגר": 20, "קולה": 10 }
+shopping_list = []
+
 initApp()
 function initApp() {
-    // shopping_list = []
     order_check = []
     total_price = 0
 }
