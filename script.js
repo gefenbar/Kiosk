@@ -1,13 +1,13 @@
 prices = { "שניצל": 25, "צ'יפס": 15, "המבורגר": 20, "קולה": 10 }
 initApp()
 function initApp() {
-    shopping_list = []
+    // shopping_list = []
     order_check = []
     total_price = 0
 }
 
 function mark(tile) {
-        if (tile.textContent === '-') {
+    if (tile.textContent === '-') {
         tile.textContent = "V"
         document.getElementById(tile.id).style.color = "#008000b3";
         shopping_list.push(tile.name)
