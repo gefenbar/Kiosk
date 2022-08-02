@@ -66,54 +66,54 @@
     }
 
     #zero {
-        background-image: url(https://github.com/gefenbar/Kiosk/blob/main/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
     }
 
     #one {
-        background-image: url(https://github.com/gefenbar/Kiosk/blob/main/images/fries.png) !important;
+        background-image: url(./images/fries.png) !important;
     }
 
     #two {
-        background-image: url(https://github.com/gefenbar/Kiosk/blob/main/images/schnitzel.png) !important;
+        background-image: url(./images/schnitzel.png) !important;
 
     }
 
     #three {
-        background-image: url(https://raw.githubusercontent.com/gefenbar/Kiosk/main/images/coke.png) !important;
+        background-image: url(./images/coke.png) !important;
 
     }
 
     #four {
-        background-image: url(https://github.com/gefenbar/Kiosk/blob/main/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
 
     }
 
     #five {
-        background-image: url(https://github.com/gefenbar/Kiosk/blob/main/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
 
     }
 
     #six {
-        background-image: url(https://github.com/gefenbar/Kiosk/blob/main/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
 
     }
 
     #seven {
-        background-image: url(/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
 
     }
 
     #eight {
-        background-image: url(/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
 
     }
 
     #nine {
-        background-image: url(/images/burger.png) !important;
+        background-image: url(./images/burger.png) !important;
     }
 
     #ten {
-        background-image: url(/images/fries.png) !important;
+        background-image: url(./images/fries.png) !important;
     }
 
     #eleven {
