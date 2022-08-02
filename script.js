@@ -1,6 +1,5 @@
 prices = { "שניצל": 25, "צ'יפס": 15, "המבורגר": 20, "קולה": 10 }
 shopping_list = []
-
 initApp()
 function initApp() {
     order_check = []
@@ -37,4 +36,10 @@ function getUserInfo(user_name, user_number) {
     localStorage.setItem("name", user_name)
     localStorage.setItem("number", user_number)
 }
+function changeButtonBackgrond() {
+    if (document.getElementById("full_name").value != '' && document.getElementById("phone_number").value != '')
+        document.getElementById("submit_btn").style.backgroundColor = "#008000b3"
+    else
+        document.getElementById("submit_btn").style.backgroundColor = "#efefef"
 
+}

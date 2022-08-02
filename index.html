@@ -19,9 +19,10 @@
         <br>
         <input id="full_name" class="login_page" type="text" placeholder="שם מלא" target="name">
         <br>
-        <input id="phone_number" class="login_page" type="text" placeholder="מספר טלפון">
+        <input id="phone_number" class="login_page" type="text" placeholder="מספר טלפון" onchange="changeButtonBackgrond()
+        ">
         <br>
-        <button class="login_page" type="submit" target="send"
+        <button id="submit_btn" class="login_page" type="submit" target="send"
             onclick="getUserInfo(full_name.value,phone_number.value)">כניסה</button>
     </form>
     <footer>
