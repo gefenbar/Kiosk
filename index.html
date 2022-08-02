@@ -10,27 +10,34 @@
 
 <body>
     <header>
+        <button type="button" id="exit" onclick="window.close()">X</button>
         <img id="logo" src="./images/logo.png" alt="logo">
         <hr>
     </header>
     <h2>
         בחר מוצרים
     </h2>
+    <p>
+        להוספת מוצר להזמנה-לחיצה על המוצר
+    </p>
+    <p>
+        לביטול הוספת מוצר להזמנה-לחיצה נוספת על המוצר
+    </p>
     <div class="grid-container">
         <div class="grid-item" id="zero">
-            <button type="button" name="0" class="tiles" onclick="mark(this)">-</button>
+            <button type="button" name="המבורגר" class="tiles" onclick="mark(this)">-</button>
             <p class="prices">19:90₪:מחיר</p>
         </div>
         <div class="grid-item" id="one">
-            <button type="button" name="1" class="tiles" onclick="mark(this)">-</button>
+            <button type="button" name="צ'יפס" class="tiles" onclick="mark(this)">-</button>
             <p class="prices">19:90₪:מחיר</p>
         </div>
         <div class="grid-item" id="two">
-            <button type="button" name="2" class="tiles" onclick="mark(this)">-</button>
+            <button type="button" name="שניצל" class="tiles" onclick="mark(this)">-</button>
             <p class="prices">19:90₪:מחיר</p>
         </div>
         <div class="grid-item" id="three">
-            <button type="button" name="3" class="tiles" onclick="mark(this)">-</button>
+            <button type="button" name="קולה" class="tiles" onclick="mark(this)">-</button>
             <p class="prices">19:90₪:מחיר</p>
         </div>
         <div class="grid-item" id="four">
@@ -66,7 +73,7 @@
             <p class="prices">19:90₪:מחיר</p>
         </div>
     </div>
-    <button type="button" id="order_now" onclick="mark(this)">הזמינו עכשיו</button>
+    <button type="button" id="order_now" onclick="order()">הזמינו עכשיו</button>
     <footer>
         <hr>
     </footer>

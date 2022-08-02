@@ -1,4 +1,3 @@
-const winCombinations = [['0', '1', '2'], ['0', '3', '6'], ['3', '4', '5'], ['6', '7', '8'], ['1', '4', '7'], ['2', '5', '8'], ['0', '4', '8'], ['2', '4', '6']]
 initApp()
 function initApp() {
     shopping_list = []
@@ -14,9 +13,13 @@ function mark(tile) {
         tile.textContent = '-'
         shopping_list.pop(tile.name)
     }
-    console.log(shopping_list)
 }
 
-function navigation() {
+function order() {
+    for (let index = 0; index < shopping_list.length; index++) {
+        console.log(shopping_list[index])
+    }
+
+    
 
 }
