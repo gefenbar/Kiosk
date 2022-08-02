@@ -19,7 +19,9 @@ function order() {
     for (let index = 0; index < shopping_list.length; index++) {
         console.log(shopping_list[index])
     }
-
-    
-
 }
+function windowClose() {
+    window.open('','_parent','');
+    window.close();
+    }
+
