@@ -71,11 +71,14 @@ function getUserInfo(user_name, user_number) {
 }
 
 function changeButtonBackgrond() {
-    if (document.getElementById("full_name").value != '' && document.getElementById("phone_number").value != '')
+    if (document.getElementById("full_name").value != '' && document.getElementById("phone_number").value != ''){
         document.getElementById("submit_btn").style.backgroundColor = "#008000b3"
-    else
-        document.getElementById("submit_btn").style.backgroundColor = "#efefef"
+        document.getElementById("submit_btn").disabled=false
 }
+    else{
+    document.getElementById("submit_btn").disabled=true
+        document.getElementById("submit_btn").style.backgroundColor = "#efefef"
+}}
 
 
 
