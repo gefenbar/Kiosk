@@ -2,11 +2,12 @@ prices = { "שניצל": 25, "צ'יפס": 15, "המבורגר": 20, "קולה": 
 shopping_list = []
 initApp()
 function initApp() {
-    x=document.getElementsByClassName("tiles");  // Find the elements
-    for(var i = 0; i < x.length; i++){
-    x[i].innerText='-';    // Change the content
-    x[i].style.color='transparent'
+    products = document.getElementsByClassName("tiles");  // Find the elements
+    for (var i = 0; i < products.length; i++) {
+        products[i].innerText = '-';    // Change the content
+        products[i].style.color = 'transparent'
     }
+    shopping_list = []
     order_check = []
     total_price = 0
 }
@@ -21,7 +22,7 @@ function mark(tile) {
         tile.textContent = "V"
         document.getElementById(tile.id).style.color = "#008000b3";
         shopping_list.push(tile.name)
-       
+
     }
 }
 
