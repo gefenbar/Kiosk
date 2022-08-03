@@ -25,19 +25,7 @@ function mark(tile) {
         document.getElementById(tile.id).style.color = "#008000b3";
         shopping_list.push(tile.name)
     }
-    if(shopping_list.length>0){
-        document.querySelector("#order_now").style.backgroundColor="#008000b3"
-        document.querySelector("#order_now").disabled=false
-        document.querySelector("#order_now").style.color="white"
-
-    }
-    else{
-        document.querySelector("#order_now").style.backgroundColor="white"
-        document.querySelector("#order_now").disabled=true
-        document.querySelector("#order_now").style.color="#008000b3"
-
-    }
-
+    disableOrderButton()
 }
 
 function order() {
@@ -51,9 +39,26 @@ function order() {
         alert("ההזמנה בוצעה בהצלחה")
     else
         alert("ההזמנה בוטלה")
+
     initApp()
+    disableOrderButton()
+
 }
 
+function disableOrderButton() {
+    if (shopping_list.length > 0) {
+        document.querySelector("#order_now").style.backgroundColor = "#008000b3"
+        document.querySelector("#order_now").disabled = false
+        document.querySelector("#order_now").style.color = "white"
+
+    }
+    else {
+        document.querySelector("#order_now").style.backgroundColor = "white"
+        document.querySelector("#order_now").disabled = true
+        document.querySelector("#order_now").style.color = "#008000b3"
+
+    }
+}
 
 // login page
 function getUserInfo(user_name, user_number) {
@@ -67,5 +72,6 @@ function changeButtonBackgrond() {
     else
         document.getElementById("submit_btn").style.backgroundColor = "#efefef"
 }
+
 
 
