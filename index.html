@@ -8,7 +8,7 @@
     <title>Pool Kiosk</title>
 </head>
 
-<body>
+<body onpageshow="changeButtonBackgrond()">
     <header>
         <!-- <button type="button" id="exit" onclick="exit()">X</button> -->
         <img id="logo" src="./images/logo.png" alt="logo">
@@ -20,8 +20,8 @@
         <input id="full_name" class="login_page" type="text" placeholder="שם מלא" target="name"
             onkeyup="this.value = this.value.replace(/[^א-ת,' ']/, '')" oninput="changeButtonBackgrond()">
         <br>
-        <input id="phone_number" class="login_page" type="number" placeholder="מספר טלפון" oninput="changeButtonBackgrond()
-        ">
+        <input id="phone_number" class="login_page" type="number" placeholder="מספר טלפון"
+            oninput="changeButtonBackgrond()">
         <br>
         <button id="submit_btn" class="login_page" type="submit" target="send"
             onclick="getUserInfo(full_name.value,phone_number.value)" disabled>כניסה</button>
