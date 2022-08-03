@@ -50,12 +50,16 @@ function disableOrderButton() {
         document.querySelector("#order_now").style.backgroundColor = "#008000b3"
         document.querySelector("#order_now").disabled = false
         document.querySelector("#order_now").style.color = "white"
+        document.querySelector("#order_now").innerText = "הזמינו עכשיו"
+
 
     }
     else {
         document.querySelector("#order_now").style.backgroundColor = "white"
         document.querySelector("#order_now").disabled = true
         document.querySelector("#order_now").style.color = "#008000b3"
+        document.querySelector("#order_now").innerText = "בחרו מוצרים להזמנה"
+
 
     }
 }
