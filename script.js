@@ -2,20 +2,26 @@ prices = { "שניצל": 25, "צ'יפס": 15, "המבורגר": 20, "קולה": 
 shopping_list = []
 initApp()
 function initApp() {
+    x=document.getElementsByClassName("tiles");  // Find the elements
+    for(var i = 0; i < x.length; i++){
+    x[i].innerText='-';    // Change the content
+    x[i].style.color='transparent'
+    }
     order_check = []
     total_price = 0
 }
 
 function mark(tile) {
-    if (tile.textContent === '-') {
-        tile.textContent = "V"
-        document.getElementById(tile.id).style.color = "#008000b3";
-        shopping_list.push(tile.name)
-    }
-    else {
+    if (tile.textContent === 'V') {
         tile.textContent = '-'
         document.getElementById(tile.id).style.color = "transparent";
         shopping_list.pop(tile.name)
+    }
+    else {
+        tile.textContent = "V"
+        document.getElementById(tile.id).style.color = "#008000b3";
+        shopping_list.push(tile.name)
+       
     }
 }
 
@@ -41,5 +47,5 @@ function changeButtonBackgrond() {
         document.getElementById("submit_btn").style.backgroundColor = "#008000b3"
     else
         document.getElementById("submit_btn").style.backgroundColor = "#efefef"
-
 }
+
