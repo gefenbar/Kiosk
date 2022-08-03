@@ -27,6 +27,7 @@ function mark(tile) {
 }
 
 function order() {
+    if(shopping_list.length>0){
     for (let index = 0; index < shopping_list.length; index++) {
         product = shopping_list[index]
         order_check[index] = product + ":" + prices[product]
@@ -38,6 +39,9 @@ function order() {
     else
         alert("ההזמנה בוטלה")
     initApp()
+}
+else
+alert("רשימת המוצרים ריקה! לא ניתן לבצע הזמנה")
 }
 function getUserInfo(user_name, user_number) {
     localStorage.setItem("name", user_name)
